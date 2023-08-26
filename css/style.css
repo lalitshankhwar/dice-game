@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #025464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Satisfy', cursive;
+    color: #E8AA42;
+    font-size: 4rem;
+}
+
+button {
+    border: 3px solid #000;
+    background-color: #E57C23;
+    color: #000;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #F8F1F1;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.diceBox {
+    margin: 3rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.diceBox h1 {
+    color: #F8F1F1;
+}
+
+.diceBox img {
+    width: 200px;
+    transition: all 0.5s ease-in-out;
+}
+
+.anime {
+    animation: loading 2s ease-in-out;
+}
+
+@keyframes loading {
+    from {
+        transform: rotateY(2880deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@media (max-width: 591px) {
+    .text {
+        font-size: 2rem;
+    }
+    .diceBox img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 382px) {
+    .diceBox {
+        gap: 1rem;
+        margin:1rem 0.5rem;
+    }
+}
